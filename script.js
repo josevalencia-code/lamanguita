@@ -1,5 +1,5 @@
-// Cambia aquí el número (lada país + 10 dígitos, sin signos): ejemplo 5233XXXXXXXX
-var WA_NUMBER = "523300000000";
+// Número de WhatsApp: 52 (México) + 10 dígitos, sin signos ni espacios
+var WA_NUMBER = "523322040054";
 
 /* WhatsApp */
 (function () {

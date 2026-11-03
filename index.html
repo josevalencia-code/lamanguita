@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Manguita</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="draft">Borrador con datos de ejemplo. Falta cambiar fotos, cifras y número de contacto.</div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio">La Manguita</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#cabana">La cabaña</a></li>
+        <li><a href="#galeria">Fotos</a></li>
+        <li><a href="#mazamitla">Mazamitla</a></li>
+        <li><a href="#reservar">Reservar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="kicker">Cabaña en Mazamitla, Jalisco</p>
+        <h1>La <span>Manguita</span></h1>
+        <p class="lead">Pinos, aire fresco y una chimenea encendida. Una cabaña pequeña de nombre dulce para desconectarte del fin de semana largo.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#reservar">Consultar fechas</a>
+          <a class="btn ghost" href="#galeria">Ver fotos</a>
+        </div>
+      </div>
+
+      <svg viewBox="0 0 480 420" role="img" aria-label="Ilustración de una cabaña entre pinos bajo un mango que hace de sol">
+        <defs>
+          <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffd24a"/>
+            <stop offset=".6" stop-color="#f2a516"/>
+            <stop offset="1" stop-color="#e2571b"/>
+          </linearGradient>
+        </defs>
+        <!-- mango sol -->
+        <g transform="rotate(-24 330 140)">
+          <ellipse cx="330" cy="140" rx="82" ry="104" fill="url(#mg)"/>
+          <path d="M330 38 C 338 24 352 20 364 24 C 356 36 346 42 330 38 Z" fill="#6aa84f"/>
+          <rect x="327" y="30" width="5" height="14" rx="2" fill="#5a3a1a"/>
+        </g>
+        <!-- pinos al fondo -->
+        <g fill="#2b5a46">
+          <polygon points="40,330 80,200 120,330"/><polygon points="55,270 80,190 105,270" />
+          <polygon points="400,330 440,190 480,330"/><polygon points="415,260 440,180 465,260"/>
+        </g>
+        <!-- pinos frente -->
+        <g fill="#153126">
+          <polygon points="-10,420 40,230 90,420"/><polygon points="10,320 40,215 70,320"/>
+          <polygon points="390,420 445,215 500,420"/><polygon points="412,320 445,200 478,320"/>
+        </g>
+        <!-- cabaña -->
+        <g>
+          <rect x="150" y="270" width="170" height="110" fill="#6b4423"/>
+          <g stroke="#4d3018" stroke-width="2"><line x1="150" y1="294" x2="320" y2="294"/><line x1="150" y1="318" x2="320" y2="318"/><line x1="150" y1="342" x2="320" y2="342"/><line x1="150" y1="366" x2="320" y2="366"/></g>
+          <polygon points="136,278 235,200 334,278" fill="#2a1d12"/>
+          <rect x="278" y="205" width="20" height="46" fill="#4d3018"/>
+          <rect x="216" y="324" width="38" height="56" rx="3" fill="#2a1d12"/>
+          <rect x="172" y="306" width="30" height="30" fill="#ffd24a"/>
+          <rect x="268" y="306" width="30" height="30" fill="#ffd24a"/>
+          <g stroke="#4d3018" stroke-width="2"><line x1="187" y1="306" x2="187" y2="336"/><line x1="172" y1="321" x2="202" y2="321"/><line x1="283" y1="306" x2="283" y2="336"/><line x1="268" y1="321" x2="298" y2="321"/></g>
+        </g>
+        <!-- humo -->
+        <g class="smoke" fill="#f4f1e4">
+          <circle cx="288" cy="190" r="9"/><circle cx="296" cy="170" r="12"/><circle cx="288" cy="146" r="14"/>
+        </g>
+        <!-- suelo -->
+        <rect x="0" y="380" width="480" height="40" fill="#0e1f17"/>
+      </svg>
+    </div>
+  </section>
+
+  <div class="facts">
+    <div class="wrap">
+      <ul>
+        <li><b>6</b>personas</li>
+        <li><b>2</b>recámaras</li>
+        <li><b>2</b>baños</li>
+        <li><b>1</b>chimenea</li>
+        <li><b>2,000 m+</b>de altura</li>
+      </ul>
+    </div>
+  </div>
+
+  <section id="cabana">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <p class="eyebrow">La cabaña</p>
+          <h2>Chica por fuera, generosa por dentro</h2>
+        </div>
+        <div class="text">
+          <p><strong>La Manguita</strong> está pensada para familias y grupos de amigos que quieren cocinar juntos, jugar baraja junto al fuego y despertar con olor a pino.</p>
+          <p>Sala con chimenea, cocina equipada, terraza con asador y estacionamiento dentro del terreno. El pueblo queda a unos minutos en coche.</p>
+        </div>
+      </div>
+
+      <ul class="amen">
+        <li><div><b>Chimenea y leña</b><span>La primera carga va incluida.</span></div></li>
+        <li><div><b>Asador en terraza</b><span>Carbón y parrilla disponibles.</span></div></li>
+        <li><div><b>Cocina equipada</b><span>Estufa, refri, vajilla y cafetera.</span></div></li>
+        <li><div><b>Wi-Fi</b><span>Para el que no se puede desconectar.</span></div></li>
+        <li><div><b>Estacionamiento</b><span>Hasta 3 autos dentro del terreno.</span></div></li>
+        <li><div><b>Ropa de cama y toallas</b><span>Todo listo al llegar.</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="galeria" style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">Fotos</p>
+      <h2>Un vistazo por dentro y por fuera</h2>
+      <div class="gallery">
+        <div class="shot s1">Fachada y jardín</div>
+        <div class="shot s2">Sala con chimenea</div>
+        <div class="shot s3">Terraza y asador</div>
+        <div class="shot s4">Recámara principal</div>
+        <div class="shot s5">Cocina</div>
+        <div class="shot s6">Atardecer en el bosque</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mazamitla" style="padding-top:0">
+    <div class="wrap">
+      <div class="place">
+        <div>
+          <p class="eyebrow">Dónde estamos</p>
+          <h2>Mazamitla, Pueblo Mágico</h2>
+          <p>Un pueblo de montaña de calles empedradas, tejados rojos y clima fresco todo el año. Llegas desde Guadalajara en unas 2 horas por carretera.</p>
+        </div>
+        <ul>
+          <li><span>Centro y plaza de Mazamitla</span><span>5 min en coche</span></li>
+          <li><span>Mirador del Tecuán</span><span>15 min en coche</span></li>
+          <li><span>Presa La Villa</span><span>20 min en coche</span></li>
+          <li><span>Guadalajara</span><span>unas 2 h</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservar" style="padding-top:0">
+    <div class="wrap">
+      <div class="book">
+        <div>
+          <p class="eyebrow">Reservar</p>
+          <h2>Cuéntanos cuándo quieres venir</h2>
+          <p>Elige fechas y número de personas. Te abrimos un mensaje de WhatsApp ya escrito y te respondemos con disponibilidad y tarifa.</p>
+          <p class="num">WhatsApp: 33 0000 0000</p>
+        </div>
+        <form id="wa-form" novalidate>
+          <div class="row">
+            <label for="llegada">Llegada<input id="llegada" type="date"></label>
+            <label for="salida">Salida<input id="salida" type="date"></label>
+          </div>
+          <label for="personas">Personas<input id="personas" type="number" min="1" max="6" value="4"></label>
+          <label for="nombre">Tu nombre<input id="nombre" type="text" autocomplete="name" placeholder="Nombre"></label>
+          <a id="wa-link" class="btn" href="#reservar" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>La Manguita · Mazamitla, Jalisco</span>
+    <span>Reservas por WhatsApp</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

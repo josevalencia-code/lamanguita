@@ -1,29 +1,29 @@
 /* Layout idea: portada verde pino con la fachada real; galería en columnas con filtros; acento mango. */
 :root {
-  --bg: #eef1e7;
-  --surface: #ffffff;
-  --ink: #1b2a22;
-  --muted: #4f5f55;
-  --line: #d3dac7;
-  --pine: #1f4535;
-  --pine-deep: #153126;
+  --bg: #f4eee3;
+  --surface: #fffaf2;
+  --ink: #2a1c14;
+  --muted: #6a5a4c;
+  --line: #e0d3bf;
+  --pine: #4a2a1a;        /* nogal: nav, portada y reservas */
+  --pine-deep: #2e1a10;
   --mango: #f2a516;
   --mango-text: #a85c00;
-  --on-pine: #f4f1e4;
+  --on-pine: #f8efe0;
   --font-display: "Caprasimo", "Rockwell", Georgia, serif;
   --font-body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #101c16; --surface: #182820; --ink: #edf0e4; --muted: #a8b8ab;
-    --line: #2b4036; --pine-deep: #0b1510; --mango-text: #f2a516;
+    --bg: #1d130d; --surface: #2a1c13; --ink: #f3e9da; --muted: #c9b8a3;
+    --line: #46321f; --pine-deep: #140b07; --mango-text: #f2a516;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #101c16; --surface: #182820; --ink: #edf0e4; --muted: #a8b8ab;
-  --line: #2b4036; --pine-deep: #0b1510; --mango-text: #f2a516;
+  --bg: #1d130d; --surface: #2a1c13; --ink: #f3e9da; --muted: #c9b8a3;
+  --line: #46321f; --pine-deep: #140b07; --mango-text: #f2a516;
   color-scheme: dark;
 }
 
@@ -108,7 +108,7 @@ footer { background: var(--bg); }
 
 /* Lightbox */
 dialog#lb { border: 0; padding: 0; background: transparent; max-width: 100vw; max-height: 100vh; width: 100%; height: 100%; color: #fff; }
-dialog#lb::backdrop { background: rgba(8, 14, 11, .92); }
+dialog#lb::backdrop { background: rgba(14, 8, 5, .92); }
 .lb-body { height: 100%; display: grid; grid-template-rows: 1fr auto; gap: 12px; padding: 16px; }
 .lb-body img { margin: auto; max-height: calc(100vh - 110px); width: auto; max-width: 100%; object-fit: contain; border-radius: 8px; }
 .lb-cap { text-align: center; font-size: 15px; opacity: .9; }
@@ -132,7 +132,7 @@ dialog#lb::backdrop { background: rgba(8, 14, 11, .92); }
 .book .num { font-weight: 700; font-size: 20px; margin-top: 18px; opacity: 1; }
 form { display: flex; flex-direction: column; gap: 14px; }
 label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; }
-input { width: 100%; min-width: 0; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 10px; border: 1px solid transparent; background: #f7f6ee; color: #1b2a22; }
+input { width: 100%; min-width: 0; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 10px; border: 1px solid transparent; background: #fbf6ec; color: #2a1c14; }
 .row { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
 form .btn { text-align: center; margin-top: 4px; }
 

@@ -71,3 +71,18 @@ var WA_NUMBER = "523322040054";
     if (e.key === "ArrowRight") show(idx + 1);
   });
 })();
+
+/* Fondo que cambia con la sección */
+(function () {
+  var layers = document.querySelectorAll(".bg-layer");
+  var secs = document.querySelectorAll("section[data-bg]");
+  if (!layers.length || !("IntersectionObserver" in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var i = parseInt(e.target.getAttribute("data-bg"), 10);
+      layers.forEach(function (l, k) { l.classList.toggle("is-on", k === i); });
+    });
+  }, { rootMargin: "-45% 0px -45% 0px" });
+  secs.forEach(function (s) { io.observe(s); });
+})();

@@ -32,7 +32,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 72px; }
 html { background: var(--bg); }
-body { margin: 0; background: transparent; color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+body { margin: 0; overflow-x: clip; background: transparent; color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
 h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.05; margin: 0; text-wrap: balance; }
 p { margin: 0; }
 a { color: inherit; }
@@ -133,9 +133,10 @@ dialog#lb::backdrop { background: rgba(14, 8, 5, .92); }
 .book .eyebrow { color: var(--accent-soft); }
 .book p { opacity: .9; margin-top: 14px; }
 .book .num { font-weight: 700; font-size: 20px; margin-top: 18px; opacity: 1; }
+.book .num a { color: inherit; text-underline-offset: 4px; }
 form { display: flex; flex-direction: column; gap: 14px; }
 label { display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; }
-input { width: 100%; min-width: 0; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 10px; border: 1px solid transparent; background: #fbf6ec; color: #2a1c14; }
+input { width: 100%; max-width: 100%; min-width: 0; min-height: 48px; -webkit-appearance: none; appearance: none; font: inherit; font-size: 16px; padding: 12px 14px; border-radius: 10px; border: 1px solid transparent; background: #fbf6ec; color: #2a1c14; }
 .row { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 12px; }
 form .btn { text-align: center; margin-top: 4px; }
 
@@ -155,6 +156,10 @@ footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wr
 @media (max-width: 900px) { .gallery { column-count: 2; } }
 @media (max-width: 760px) {
   body { font-size: 16px; }
+  .row { grid-template-columns: minmax(0, 1fr); }
+  .facts ul { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; font-size: 12px; letter-spacing: .08em; padding: 18px 0; }
+  .facts li + li::before { display: none; }
+  .facts li:nth-child(3) { grid-column: 1 / -1; }
   html { scroll-padding-top: 96px; }
   .nav .wrap { flex-direction: column; align-items: flex-start; gap: 6px; padding-block: 10px; }
   .brand { font-size: 20px; }

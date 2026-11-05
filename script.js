@@ -16,7 +16,7 @@ var WA_NUMBER = "523322040054";
       ". Me interesa La Manguita en Mazamitla. Llegada: " + fmt(document.getElementById("llegada").value) +
       ", salida: " + fmt(document.getElementById("salida").value) +
       ", personas: " + (document.getElementById("personas").value || "por definir") +
-      ". ¿Tienen disponibilidad?";
+      ". ¿Me comparten precios y disponibilidad para esas fechas?";
     link.href = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
   }
   form.addEventListener("input", update);
